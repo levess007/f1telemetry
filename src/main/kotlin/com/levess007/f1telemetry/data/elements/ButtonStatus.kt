@@ -1,19 +1,19 @@
 package com.levess007.f1telemetry.data.elements
 
-class ButtonStatus {
-    var isCrossAPressed = false
-    var isTriangleYPressed = false
-    var isCircleBPressed = false
-    var isSquareXPressed = false
-    var isDpadLeftPressed = false
-    var isDpadRightPressed = false
-    var isDpadUpPressed = false
-    var isDpadDownPressed = false
-    var isOptionsMenuPressed = false
-    var isL1LBPressed = false
-    var isR1RBPressed = false
-    var isL2LTPressed = false
-    var isR2RTPressed = false
-    var isLeftStickPressed = false
-    var isRightStickPressed = false
-}
+data class ButtonStatus(
+    val isCrossAPressed: Boolean,
+    val isTriangleYPressed: Boolean,
+    val isCircleBPressed: Boolean,
+    val isSquareXPressed: Boolean,
+    val isDpadLeftPressed: Boolean,
+    val isDpadRightPressed: Boolean,
+    val isDpadUpPressed: Boolean,
+    val isDpadDownPressed: Boolean,
+    val isOptionsMenuPressed: Boolean,
+    val isL1LBPressed: Boolean,
+    val isR1RBPressed: Boolean,
+    val isL2LTPressed: Boolean,
+    val isR2RTPressed: Boolean,
+    val isLeftStickPressed: Boolean,
+    val isRightStickPressed: Boolean
+)

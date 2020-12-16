@@ -1,23 +1,23 @@
 package com.levess007.f1telemetry.data.elements
 
-class LapData {
-    var carIndex = 0f
-    var isPlayersCar = false
-    var lastLapTime = 0f
-    var currentLapTime = 0f
-    var bestLaptTime = 0f
-    var sector1Time = 0f
-    var sector2Time = 0f
-    var lapDistance = 0f
-    var totalDistance = 0f
-    var safetyCarDelta = 0f
-    var carPosition = 0
-    var currentLapNum = 0
-    var pitStatus: PitStatus? = null
-    var sector = 0
-    var isCurrentLapInvalid = false
-    var penalties = 0
-    var gridPosition = 0
-    var driverStatus: DriverStatus? = null
-    var resultStatus: ResultStatus? = null
-}
+data class LapData(
+    val carIndex: Float,
+    val resultStatus: ResultStatus? = null,
+    val isPlayersCar: Boolean,
+    val lastLapTime: Float,
+    val currentLapTime: Float,
+    val bestLaptTime: Float,
+    val sector1Time: Float,
+    val sector2Time: Float,
+    val lapDistance: Float,
+    val totalDistance: Float,
+    val safetyCarDelta: Float,
+    val carPosition: Int,
+    val currentLapNum: Int,
+    val pitStatus: PitStatus? = null,
+    val sector: Int,
+    val isCurrentLapInvalid: Boolean,
+    val penalties: Int,
+    val gridPosition: Int,
+    val driverStatus: DriverStatus? = null
+)

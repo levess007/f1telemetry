@@ -1,10 +1,10 @@
 package com.levess007.f1telemetry.data.elements
 
-class ParticipantData {
-    var isAiControlled = false
-    var driverId = 0
-    var teamId = 0
-    var raceNumber = 0
-    var nationality = 0
-    var name: String? = null
-}
+data class ParticipantData(
+    val isAiControlled: Boolean,
+    val driverId: Int,
+    val teamId: Int,
+    val raceNumber: Int,
+    val nationality: Int,
+    val name: String?
+) 

@@ -1,4 +1,4 @@
-package com.example.demo
+package com.levess007.f1telemetry
 
 import javafx.scene.text.FontWeight
 import tornadofx.Stylesheet

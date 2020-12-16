@@ -1,18 +1,18 @@
 package com.levess007.f1telemetry.data.elements
 
-class CarTelemetryData {
-    var speed = 0
-    var throttle = 0
-    var steer = 0
-    var brake = 0
-    var clutch = 0
-    var gear = 0
-    var engineRpm = 0
-    var isDrs = false
-    var revLightsPercent = 0
-    var brakeTemperature: WheelData<Int?>? = null
-    var tireSurfaceTemperature: WheelData<Int?>? = null
-    var tireInnerTemperature: WheelData<Int?>? = null
-    var engineTemperature = 0
-    var tirePressure: WheelData<Float?>? = null
-}
+data class CarTelemetryData(
+    val speed: Int,
+    val throttle: Int,
+    val steer: Int,
+    val brake: Int,
+    val clutch: Int,
+    val gear: Int,
+    val engineRpm: Int,
+    val isDrs: Boolean,
+    val revLightsPercent: Int,
+    val brakeTemperature: WheelData<Int?>?,
+    val tireSurfaceTemperature: WheelData<Int?>?,
+    val tireInnerTemperature: WheelData<Int?>?,
+    val engineTemperature: Int,
+    val tirePressure: WheelData<Float?>? = null
+)
